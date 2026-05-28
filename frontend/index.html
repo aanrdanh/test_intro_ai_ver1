@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vienna U-Bahn Navigator MVP</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="icon" href="data:;base64,=" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Vienna U-Bahn Navigator MVP</h1>
+    <p>Pick two stations, request a route from the mock API, and view it on the map.</p>
+  </header>
+  <section class="controls">
+    <label>
+      Start Station
+      <select id="startStation"></select>
+    </label>
+    <label>
+      End Station
+      <select id="endStation"></select>
+    </label>
+    <div class="map-pick-buttons">
+      <button id="pickStartBtn" class="pick-btn">Pick start on map</button>
+      <button id="pickEndBtn" class="pick-btn">Pick end on map</button>
+    </div>
+    <button id="findRouteBtn">Find Route</button>
+  </section>
+  <div id="map"></div>
+  <div class="status" id="statusMessage">Ready. Select start and end stations, then click Find Route.</div>
+  <div class="route-details" id="routeDetails"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

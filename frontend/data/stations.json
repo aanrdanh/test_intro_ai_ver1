@@ -1,0 +1,7 @@
+[
+  { "name": "Stephansplatz", "coords": [48.2083, 16.3731] },
+  { "name": "Karlsplatz", "coords": [48.1995, 16.3697] },
+  { "name": "Schwedenplatz", "coords": [48.2144, 16.3764] },
+  { "name": "Rathaus", "coords": [48.2080, 16.3599] },
+  { "name": "Museumsquartier", "coords": [48.2039, 16.3635] }
+]
